@@ -1,0 +1,1328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cartHome"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cart">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="#EFE2FA"
+      android:orientation="vertical"
+      tools:layout_editor_absoluteX="1dp"
+      tools:layout_editor_absoluteY="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="0dp"
+        android:background="#31294C"
+        android:orientation="horizontal">
+
+      <ImageButton
+          android:id="@+id/profiletohome"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:background="#31294C"
+          android:onClick="goToHome"
+          android:tint="#F9F9F9"
+          app:srcCompat="?attr/actionModeCloseDrawable" />
+
+      <TextView
+          android:id="@+id/mycart"
+          android:layout_width="350dp"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:background="#31294C"
+          android:paddingTop="5dp"
+          android:paddingRight="50dp"
+          android:text="My Cart"
+          android:textAlignment="center"
+          android:textColor="#F9F9F9"
+          android:textSize="24sp"
+          android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Cart Is Empty"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:translationX="120dp"
+        android:translationY="300dp"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FAF6F6"
+        android:clickable="false"
+        android:visibility="visible">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="163dp"
+            android:layout_margin="19dp"
+            android:background="#31294C"
+            android:orientation="horizontal"
+            android:padding="-2dp"
+            android:visibility="visible">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="160dp"
+              android:layout_margin="2dp"
+              android:layout_marginLeft="0.002dp"
+              android:background="@color/white"
+              android:orientation="horizontal"
+              android:weightSum="100">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:orientation="vertical">
+
+              <ImageView
+                  android:layout_width="match_parent"
+                  android:layout_height="200dp"
+                  android:layout_marginTop="5dp"
+                  android:layout_weight="90"
+                  android:background="#F9F9F9"
+                  app:srcCompat="@drawable/kurkure" />
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:paddingLeft="30dp">
+
+
+                <ImageButton
+                    android:id="@+id/minusbutton1"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:background="#F9F9F9"
+                    android:translationY="4dp"
+                    app:srcCompat="@drawable/minus" />
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="23dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_weight="1"
+                    android:text="1"
+                    android:textAlignment="center"
+                    android:textColor="#171616"
+                    android:textSize="27dp"
+                    android:textStyle="bold"
+                    android:translationX="15dp"
+                    android:translationY="-4dp" />
+
+                <ImageButton
+                    android:id="@+id/plusbutton1"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="90dp"
+                    android:layout_marginRight="90dp"
+                    android:layout_weight="1"
+                    android:background="#F9F9F9"
+                    android:translationX="40dp"
+                    android:translationY="4dp"
+                    app:srcCompat="@drawable/plus" />
+              </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:orientation="vertical">
+
+              <TextView
+                  android:id="@+id/masalamunch2"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="Masala Munch"
+                  android:textColor="#31294C"
+                  android:textSize="25sp"
+                  android:textStyle="bold" />
+
+              <TextView
+                  android:id="@+id/textView123"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="20dp"
+                  android:text="Rs.10"
+                  android:textColor="#0B0B0B"
+                  android:textSize="20dp"
+                  android:textStyle="bold" />
+
+              <ImageButton
+                  android:id="@+id/ButtonDustbin1"
+                  android:layout_width="60dp"
+                  android:layout_height="38dp"
+                  android:layout_marginTop="30dp"
+                  android:background="#BFB7B7"
+                  android:tint="#333131"
+                  app:srcCompat="@android:drawable/ic_menu_delete">
+
+              </ImageButton>
+
+            </LinearLayout>
+
+          </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="163dp"
+            android:layout_margin="19dp"
+            android:background="#31294C"
+            android:orientation="horizontal"
+            android:padding="-2dp">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="160dp"
+              android:layout_margin="2dp"
+              android:layout_marginLeft="0.002dp"
+              android:background="@color/white"
+              android:orientation="horizontal"
+              android:weightSum="100">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:orientation="vertical">
+
+              <ImageView
+                  android:layout_width="match_parent"
+                  android:layout_height="200dp"
+                  android:layout_marginTop="5dp"
+                  android:layout_weight="90"
+                  android:background="#F9F9F9"
+                  app:srcCompat="@drawable/lays_indias_magic_masala" />
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:paddingLeft="30dp">
+
+
+                <ImageButton
+                    android:id="@+id/minusbutton2"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:background="#F9F9F9"
+                    android:translationY="4dp"
+                    app:srcCompat="@drawable/minus" />
+
+                <TextView
+                    android:id="@+id/textopView81"
+                    android:layout_width="23dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_weight="1"
+                    android:text="1"
+                    android:textAlignment="center"
+                    android:textColor="#171616"
+                    android:textSize="27dp"
+                    android:textStyle="bold"
+                    android:translationX="15dp"
+                    android:translationY="-4dp" />
+
+                <ImageButton
+                    android:id="@+id/plusbutton2"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="90dp"
+                    android:layout_marginRight="90dp"
+                    android:layout_weight="1"
+                    android:background="#F9F9F9"
+                    android:translationX="40dp"
+                    android:translationY="4dp"
+                    app:srcCompat="@drawable/plus" />
+              </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:orientation="vertical">
+
+              <TextView
+                  android:id="@+id/textView101"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="Indian Masala"
+                  android:textColor="#31294C"
+                  android:textSize="25sp"
+                  android:textStyle="bold" />
+
+              <TextView
+                  android:id="@+id/textView22"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="20dp"
+                  android:text="Rs.10"
+                  android:textColor="#0B0B0B"
+                  android:textSize="20dp"
+                  android:textStyle="bold" />
+
+              <ImageButton
+                  android:id="@+id/ButtonDustbin2"
+                  android:layout_width="60dp"
+                  android:layout_height="38dp"
+                  android:layout_marginTop="30dp"
+                  android:background="#BFB7B7"
+                  android:tint="#333131"
+                  app:srcCompat="@android:drawable/ic_menu_delete">
+
+              </ImageButton>
+
+            </LinearLayout>
+
+          </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="163dp"
+            android:layout_margin="19dp"
+            android:background="#31294C"
+            android:orientation="horizontal"
+            android:padding="-2dp">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="160dp"
+              android:layout_margin="2dp"
+              android:layout_marginLeft="0.002dp"
+              android:background="@color/white"
+              android:orientation="horizontal"
+              android:weightSum="100">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:orientation="vertical">
+
+              <ImageView
+                  android:layout_width="match_parent"
+                  android:layout_height="200dp"
+                  android:layout_marginTop="5dp"
+                  android:layout_weight="90"
+                  android:background="#F9F9F9"
+                  app:srcCompat="@drawable/lays_cream_onion" />
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:paddingLeft="30dp">
+
+
+                <ImageButton
+                    android:id="@+id/minusbutton3"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:background="#F9F9F9"
+                    android:translationY="4dp"
+                    app:srcCompat="@drawable/minus" />
+
+                <TextView
+                    android:id="@+id/tView18"
+                    android:layout_width="23dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_weight="1"
+                    android:text="1"
+                    android:textAlignment="center"
+                    android:textColor="#171616"
+                    android:textSize="27dp"
+                    android:textStyle="bold"
+                    android:translationX="15dp"
+                    android:translationY="-4dp" />
+
+                <ImageButton
+                    android:id="@+id/plusbutton3"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="90dp"
+                    android:layout_marginRight="90dp"
+                    android:layout_weight="1"
+                    android:background="#F9F9F9"
+                    android:translationX="40dp"
+                    android:translationY="4dp"
+                    app:srcCompat="@drawable/plus" />
+              </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:orientation="vertical">
+
+              <TextView
+                  android:id="@+id/CnO"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="Cream n Onion"
+                  android:textColor="#31294C"
+                  android:textSize="25sp"
+                  android:textStyle="bold" />
+
+              <TextView
+                  android:id="@+id/textView33"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="20dp"
+                  android:text="Rs.10"
+                  android:textColor="#0B0B0B"
+                  android:textSize="20dp"
+                  android:textStyle="bold" />
+
+              <ImageButton
+                  android:id="@+id/ButtonDustbin3"
+                  android:layout_width="60dp"
+                  android:layout_height="38dp"
+                  android:layout_marginTop="30dp"
+                  android:background="#BFB7B7"
+                  android:tint="#333131"
+                  app:srcCompat="@android:drawable/ic_menu_delete">
+
+              </ImageButton>
+
+            </LinearLayout>
+
+          </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="163dp"
+            android:layout_margin="19dp"
+            android:background="#31294C"
+            android:orientation="horizontal"
+            android:padding="-2dp">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="160dp"
+              android:layout_margin="2dp"
+              android:layout_marginLeft="0.002dp"
+              android:background="@color/white"
+              android:orientation="horizontal"
+              android:weightSum="100">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:orientation="vertical">
+
+              <ImageView
+                  android:layout_width="match_parent"
+                  android:layout_height="200dp"
+                  android:layout_marginTop="5dp"
+                  android:layout_weight="90"
+                  android:background="#F9F9F9"
+                  app:srcCompat="@drawable/maggi" />
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:paddingLeft="30dp">
+
+
+                <ImageButton
+                    android:id="@+id/minusbutton4"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:background="#F9F9F9"
+                    android:translationY="4dp"
+                    app:srcCompat="@drawable/minus" />
+
+                <TextView
+                    android:id="@+id/textView44"
+                    android:layout_width="23dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_weight="1"
+                    android:text="1"
+                    android:textAlignment="center"
+                    android:textColor="#171616"
+                    android:textSize="27dp"
+                    android:textStyle="bold"
+                    android:translationX="15dp"
+                    android:translationY="-4dp" />
+
+                <ImageButton
+                    android:id="@+id/plusbutton4"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="90dp"
+                    android:layout_marginRight="90dp"
+                    android:layout_weight="1"
+                    android:background="#F9F9F9"
+                    android:translationX="40dp"
+                    android:translationY="4dp"
+                    app:srcCompat="@drawable/plus" />
+              </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:orientation="vertical">
+
+              <TextView
+                  android:id="@+id/text10"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="Maggi"
+                  android:textColor="#31294C"
+                  android:textSize="25sp"
+                  android:textStyle="bold" />
+
+              <TextView
+                  android:id="@+id/textView55"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="20dp"
+                  android:text="Rs.10"
+                  android:textColor="#0B0B0B"
+                  android:textSize="20dp"
+                  android:textStyle="bold" />
+
+              <ImageButton
+                  android:id="@+id/ButtonDustbin5"
+                  android:layout_width="60dp"
+                  android:layout_height="38dp"
+                  android:layout_marginTop="30dp"
+                  android:background="#BFB7B7"
+                  android:tint="#333131"
+                  app:srcCompat="@android:drawable/ic_menu_delete">
+
+              </ImageButton>
+
+            </LinearLayout>
+
+          </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="163dp"
+            android:layout_margin="19dp"
+            android:background="#31294C"
+            android:orientation="horizontal"
+            android:padding="-2dp">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="160dp"
+              android:layout_margin="2dp"
+              android:layout_marginLeft="0.002dp"
+              android:background="@color/white"
+              android:orientation="horizontal"
+              android:weightSum="100">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:orientation="vertical">
+
+              <ImageView
+                  android:layout_width="match_parent"
+                  android:layout_height="200dp"
+                  android:layout_marginTop="5dp"
+                  android:layout_weight="90"
+                  android:background="#F9F9F9"
+                  app:srcCompat="@drawable/kurkure" />
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:paddingLeft="30dp">
+
+
+                <ImageButton
+                    android:id="@+id/hima2geBhhutton9"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:background="#F9F9F9"
+                    android:translationY="4dp"
+                    app:srcCompat="@drawable/minus" />
+
+                <TextView
+                    android:id="@+id/textoplklView18"
+                    android:layout_width="23dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_weight="1"
+                    android:text="1"
+                    android:textAlignment="center"
+                    android:textColor="#171616"
+                    android:textSize="27dp"
+                    android:textStyle="bold"
+                    android:translationX="15dp"
+                    android:translationY="-4dp" />
+
+                <ImageButton
+                    android:id="@+id/imageBvutthfon10"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="90dp"
+                    android:layout_marginRight="90dp"
+                    android:layout_weight="1"
+                    android:background="#F9F9F9"
+                    android:translationX="40dp"
+                    android:translationY="4dp"
+                    app:srcCompat="@drawable/plus" />
+              </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:orientation="vertical">
+
+              <TextView
+                  android:id="@+id/te10"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="Masala Munch"
+                  android:textColor="#31294C"
+                  android:textSize="25sp"
+                  android:textStyle="bold" />
+
+              <TextView
+                  android:id="@+id/textView66"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="20dp"
+                  android:text="Rs.10"
+                  android:textColor="#0B0B0B"
+                  android:textSize="20dp"
+                  android:textStyle="bold" />
+
+              <ImageButton
+                  android:id="@+id/ButtonDustbin6"
+                  android:layout_width="60dp"
+                  android:layout_height="38dp"
+                  android:layout_marginTop="30dp"
+                  android:background="#BFB7B7"
+                  android:tint="#333131"
+                  app:srcCompat="@android:drawable/ic_menu_delete">
+
+              </ImageButton>
+
+            </LinearLayout>
+
+          </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="163dp"
+            android:layout_margin="19dp"
+            android:background="#31294C"
+            android:orientation="horizontal"
+            android:padding="-2dp">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="160dp"
+              android:layout_margin="2dp"
+              android:layout_marginLeft="0.002dp"
+              android:background="@color/white"
+              android:orientation="horizontal"
+              android:weightSum="100">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:orientation="vertical">
+
+              <ImageView
+                  android:layout_width="match_parent"
+                  android:layout_height="200dp"
+                  android:layout_marginTop="5dp"
+                  android:layout_weight="90"
+                  android:background="#F9F9F9"
+                  app:srcCompat="@drawable/sting" />
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:paddingLeft="30dp">
+
+
+                <ImageButton
+                    android:id="@+id/minus6"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:background="#F9F9F9"
+                    android:translationY="4dp"
+                    app:srcCompat="@drawable/minus" />
+
+                <TextView
+                    android:id="@+id/yView18"
+                    android:layout_width="23dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_weight="1"
+                    android:text="1"
+                    android:textAlignment="center"
+                    android:textColor="#171616"
+                    android:textSize="27dp"
+                    android:textStyle="bold"
+                    android:translationX="15dp"
+                    android:translationY="-4dp" />
+
+                <ImageButton
+                    android:id="@+id/imageB10"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="90dp"
+                    android:layout_marginRight="90dp"
+                    android:layout_weight="1"
+                    android:background="#F9F9F9"
+                    android:translationX="40dp"
+                    android:translationY="4dp"
+                    app:srcCompat="@drawable/plus" />
+              </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:orientation="vertical">
+
+              <TextView
+                  android:id="@+id/textV150"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="Sting"
+                  android:textColor="#31294C"
+                  android:textSize="25sp"
+                  android:textStyle="bold" />
+
+              <TextView
+                  android:id="@+id/textView77"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="20dp"
+                  android:text="Rs.10"
+                  android:textColor="#0B0B0B"
+                  android:textSize="20dp"
+                  android:textStyle="bold" />
+
+              <ImageButton
+                  android:id="@+id/ButtonDustbin7"
+                  android:layout_width="60dp"
+                  android:layout_height="38dp"
+                  android:layout_marginTop="30dp"
+                  android:background="#BFB7B7"
+                  android:tint="#333131"
+                  app:srcCompat="@android:drawable/ic_menu_delete">
+
+              </ImageButton>
+
+            </LinearLayout>
+
+          </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="163dp"
+            android:layout_margin="19dp"
+            android:background="#31294C"
+            android:orientation="horizontal"
+            android:padding="-2dp">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="160dp"
+              android:layout_margin="2dp"
+              android:layout_marginLeft="0.002dp"
+              android:background="@color/white"
+              android:orientation="horizontal"
+              android:weightSum="100">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:orientation="vertical">
+
+              <ImageView
+                  android:layout_width="match_parent"
+                  android:layout_height="200dp"
+                  android:layout_marginTop="5dp"
+                  android:layout_weight="90"
+                  android:background="#F9F9F9"
+                  app:srcCompat="@drawable/mtr_upma" />
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:paddingLeft="30dp">
+
+
+                <ImageButton
+                    android:id="@+id/hhhhgeButton9"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:background="#F9F9F9"
+                    android:translationY="4dp"
+                    app:srcCompat="@drawable/minus" />
+
+                <TextView
+                    android:id="@+id/textopVjnmew18"
+                    android:layout_width="23dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_weight="1"
+                    android:text="1"
+                    android:textAlignment="center"
+                    android:textColor="#171616"
+                    android:textSize="27dp"
+                    android:textStyle="bold"
+                    android:translationX="15dp"
+                    android:translationY="-4dp" />
+
+                <ImageButton
+                    android:id="@+id/imageBvmmn10"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="90dp"
+                    android:layout_marginRight="90dp"
+                    android:layout_weight="1"
+                    android:background="#F9F9F9"
+                    android:translationX="40dp"
+                    android:translationY="4dp"
+                    app:srcCompat="@drawable/plus" />
+              </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:orientation="vertical">
+
+              <TextView
+                  android:id="@+id/text125"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="MTR Upma"
+                  android:textColor="#31294C"
+                  android:textSize="25sp"
+                  android:textStyle="bold" />
+
+              <TextView
+                  android:id="@+id/textView99"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="20dp"
+                  android:text="Rs.10"
+                  android:textColor="#0B0B0B"
+                  android:textSize="20dp"
+                  android:textStyle="bold" />
+
+              <ImageButton
+                  android:id="@+id/ButtonDustbin8"
+                  android:layout_width="60dp"
+                  android:layout_height="38dp"
+                  android:layout_marginTop="30dp"
+                  android:background="#BFB7B7"
+                  android:tint="#333131"
+                  app:srcCompat="@android:drawable/ic_menu_delete">
+
+              </ImageButton>
+
+            </LinearLayout>
+
+          </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="163dp"
+            android:layout_margin="19dp"
+            android:background="#31294C"
+            android:orientation="horizontal"
+            android:padding="-2dp">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="160dp"
+              android:layout_margin="2dp"
+              android:layout_marginLeft="0.002dp"
+              android:background="@color/white"
+              android:orientation="horizontal"
+              android:weightSum="100">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:orientation="vertical">
+
+              <ImageView
+                  android:layout_width="match_parent"
+                  android:layout_height="200dp"
+                  android:layout_marginTop="5dp"
+                  android:layout_weight="90"
+                  android:background="#F9F9F9"
+                  app:srcCompat="@drawable/act_ii_popcorn" />
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:paddingLeft="30dp">
+
+
+                <ImageButton
+                    android:id="@+id/hi10eButton9"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:background="#F9F9F9"
+                    android:translationY="4dp"
+                    app:srcCompat="@drawable/minus" />
+
+                <TextView
+                    android:id="@+id/te10View18"
+                    android:layout_width="23dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_weight="1"
+                    android:text="1"
+                    android:textAlignment="center"
+                    android:textColor="#171616"
+                    android:textSize="27dp"
+                    android:textStyle="bold"
+                    android:translationX="15dp"
+                    android:translationY="-4dp" />
+
+                <ImageButton
+                    android:id="@+id/imageBton10"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="90dp"
+                    android:layout_marginRight="90dp"
+                    android:layout_weight="1"
+                    android:background="#F9F9F9"
+                    android:translationX="40dp"
+                    android:translationY="4dp"
+                    app:srcCompat="@drawable/plus" />
+              </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:orientation="vertical">
+
+              <TextView
+                  android:id="@+id/textV010"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="ACT II Popcorn"
+                  android:textColor="#31294C"
+                  android:textSize="25sp"
+                  android:textStyle="bold" />
+
+              <TextView
+                  android:id="@+id/textView88"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="20dp"
+                  android:text="Rs.10"
+                  android:textColor="#0B0B0B"
+                  android:textSize="20dp"
+                  android:textStyle="bold" />
+
+              <ImageButton
+                  android:id="@+id/ButtonDustbin10"
+                  android:layout_width="60dp"
+                  android:layout_height="38dp"
+                  android:layout_marginTop="30dp"
+                  android:background="#BFB7B7"
+                  android:tint="#333131"
+                  app:srcCompat="@android:drawable/ic_menu_delete">
+
+              </ImageButton>
+
+            </LinearLayout>
+
+          </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="163dp"
+            android:layout_margin="19dp"
+            android:background="#31294C"
+            android:orientation="horizontal"
+            android:padding="-2dp">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="160dp"
+              android:layout_margin="2dp"
+              android:layout_marginLeft="0.002dp"
+              android:background="@color/white"
+              android:orientation="horizontal"
+              android:weightSum="100">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:orientation="vertical">
+
+              <ImageView
+                  android:layout_width="match_parent"
+                  android:layout_height="200dp"
+                  android:layout_marginTop="5dp"
+                  android:layout_weight="90"
+                  android:background="#F9F9F9"
+                  app:srcCompat="@drawable/saffola_oats_classicmasala" />
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:paddingLeft="30dp">
+
+
+                <ImageButton
+                    android:id="@+id/Button09"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:background="#F9F9F9"
+                    android:translationY="4dp"
+                    app:srcCompat="@drawable/minus" />
+
+                <TextView
+                    android:id="@+id/textnhnjView18"
+                    android:layout_width="23dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_weight="1"
+                    android:text="1"
+                    android:textAlignment="center"
+                    android:textColor="#171616"
+                    android:textSize="27dp"
+                    android:textStyle="bold"
+                    android:translationX="15dp"
+                    android:translationY="-4dp" />
+
+                <ImageButton
+                    android:id="@+id/imaytutton10"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="90dp"
+                    android:layout_marginRight="90dp"
+                    android:layout_weight="1"
+                    android:background="#F9F9F9"
+                    android:translationX="40dp"
+                    android:translationY="4dp"
+                    app:srcCompat="@drawable/plus" />
+              </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:orientation="vertical">
+
+              <TextView
+                  android:id="@+id/textVujnew10"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="Classic Masala"
+                  android:textColor="#31294C"
+                  android:textSize="25sp"
+                  android:textStyle="bold" />
+
+              <TextView
+                  android:id="@+id/textView19"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="20dp"
+                  android:text="Rs.10"
+                  android:textColor="#0B0B0B"
+                  android:textSize="20dp"
+                  android:textStyle="bold" />
+
+              <ImageButton
+                  android:id="@+id/ButtonDustbin12"
+                  android:layout_width="60dp"
+                  android:layout_height="38dp"
+                  android:layout_marginTop="30dp"
+                  android:background="#BFB7B7"
+                  android:tint="#333131"
+                  app:srcCompat="@android:drawable/ic_menu_delete">
+
+              </ImageButton>
+
+            </LinearLayout>
+
+          </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="163dp"
+            android:layout_margin="19dp"
+            android:background="#31294C"
+            android:orientation="horizontal"
+            android:padding="-2dp">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="160dp"
+              android:layout_margin="2dp"
+              android:layout_marginLeft="0.002dp"
+              android:background="@color/white"
+              android:orientation="horizontal"
+              android:weightSum="100">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:orientation="vertical">
+
+              <ImageView
+                  android:layout_width="match_parent"
+                  android:layout_height="200dp"
+                  android:layout_marginTop="5dp"
+                  android:layout_weight="90"
+                  android:background="#F9F9F9"
+                  app:srcCompat="@drawable/cadbury_dairy_milk" />
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:paddingLeft="30dp">
+
+
+                <ImageButton
+                    android:id="@+id/h4geButton9"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:background="#F9F9F9"
+                    android:translationY="4dp"
+                    app:srcCompat="@drawable/minus" />
+
+                <TextView
+                    android:id="@+id/texthView18"
+                    android:layout_width="23dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_weight="1"
+                    android:text="1"
+                    android:textAlignment="center"
+                    android:textColor="#171616"
+                    android:textSize="27dp"
+                    android:textStyle="bold"
+                    android:translationX="15dp"
+                    android:translationY="-4dp" />
+
+                <ImageButton
+                    android:id="@+id/imageBtton1011"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="90dp"
+                    android:layout_marginRight="90dp"
+                    android:layout_weight="1"
+                    android:background="#F9F9F9"
+                    android:translationX="40dp"
+                    android:translationY="4dp"
+                    app:srcCompat="@drawable/plus" />
+              </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:orientation="vertical">
+
+              <TextView
+                  android:id="@+id/te154156854ew10"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="Cadbury Dairy Milk"
+                  android:textColor="#31294C"
+                  android:textSize="25sp"
+                  android:textStyle="bold" />
+
+              <TextView
+                  android:id="@+id/textV454iew9"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="20dp"
+                  android:text="Rs.10"
+                  android:textColor="#0B0B0B"
+                  android:textSize="20dp"
+                  android:textStyle="bold" />
+
+              <ImageButton
+                  android:id="@+id/ButtonDustbin52"
+                  android:layout_width="60dp"
+                  android:layout_height="38dp"
+                  android:layout_marginTop="30dp"
+                  android:background="#BFB7B7"
+                  android:tint="#333131"
+                  app:srcCompat="@android:drawable/ic_menu_delete">
+
+              </ImageButton>
+
+            </LinearLayout>
+
+          </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+          <TextView
+              android:id="@+id/textVi55ew14"
+              android:layout_width="0dp"
+              android:layout_height="50dp"
+              android:layout_weight="50"
+              android:background="#EFE2FA"
+              android:paddingLeft="20dp"
+              android:text="To Pay:"
+              android:textColor="#0B0A0A"
+              android:textSize="26dp"
+              android:textStyle="bold"
+              android:visibility="visible" />
+
+          <TextView
+              android:id="@+id/textVi515ew14"
+              android:layout_width="0dp"
+              android:layout_height="50dp"
+              android:layout_weight="50"
+              android:background="#EFE2FA"
+              android:paddingLeft="110dp"
+              android:text="Rs. 40"
+              android:textColor="#0C0C0C"
+              android:textSize="26dp"
+              android:textStyle="bold"
+              android:visibility="visible" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/confirm"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#31294C"
+            android:onClick="confirmOrder"
+            android:paddingBottom="10dp"
+            android:text="Confirm"
+            android:textColor="#FAFAFA"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:visibility="visible">
+
+        </Button>
+
+      </LinearLayout>
+
+    </ScrollView>
+
+
+  </LinearLayout>
+</android.support.constraint.ConstraintLayout>

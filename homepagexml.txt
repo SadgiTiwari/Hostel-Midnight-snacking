@@ -1,0 +1,1109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".homepage">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      tools:layout_editor_absoluteX="1dp"
+      tools:layout_editor_absoluteY="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:onClick="goToProfile"
+        android:orientation="horizontal">
+
+      <ImageButton
+          android:id="@+id/profile"
+          android:layout_width="22dp"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:background="#31294C"
+          app:srcCompat="@drawable/profile"
+          android:onClick="goToProfile"
+
+          />
+
+      <TextView
+          android:id="@+id/texqtView5"
+          android:layout_width="222dp"
+          android:layout_height="51dp"
+          android:layout_weight="1"
+          android:background="#31294C" />
+
+      <ImageButton
+          android:id="@+id/cart"
+          android:layout_width="20dp"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:background="#31294C"
+          android:onClick="goToCart"
+          app:srcCompat="@drawable/cart" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F9F8FA">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="20dp"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+          <LinearLayout
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="50"
+              android:orientation="vertical"
+              android:weightSum="100">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_weight="90"
+                app:srcCompat="@drawable/kurkure" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="125dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/add_rounded"
+                android:paddingBottom="5dp"
+                android:text="Add"
+                android:textColor="#F8F7F7"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+          </LinearLayout>
+
+          <LinearLayout
+              android:id="@+id/sgad"
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_margin="10dp"
+              android:layout_weight="50"
+              android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textViokew10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Masala Munch"
+                android:textColor="#31294C"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textijView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Rs. 10"
+                android:textColor="#090909"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tefxtView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp"
+                android:text="out of stock"
+                android:textColor="#E60B0B"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+              <ImageButton
+                  android:id="@+id/himageButton9"
+                  android:layout_width="0.005dp"
+                  android:layout_height="20dp"
+                  android:layout_weight="1"
+                  android:background="#F9F9F9"
+                  app:srcCompat="@drawable/minus" />
+
+              <TextView
+                  android:id="@+id/textlopView18"
+                  android:layout_width="0.002dp"
+                  android:layout_height="wrap_content"
+                  android:layout_marginBottom="3dp"
+                  android:layout_weight="1"
+                  android:text="0"
+                  android:textAlignment="center"
+                  android:textSize="20sp"
+                  android:textStyle="bold"
+                  android:translationY="-4dp" />
+
+              <ImageButton
+                  android:id="@+id/imageBvvutton10"
+                  android:layout_width="0.002dp"
+                  android:layout_height="wrap_content"
+                  android:layout_marginEnd="90dp"
+                  android:layout_marginRight="90dp"
+                  android:layout_weight="1"
+                  android:background="#F9F9F9"
+                  app:srcCompat="@drawable/plus" />
+            </LinearLayout>
+
+          </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="20dp"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+          <LinearLayout
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="50"
+              android:orientation="vertical"
+              android:weightSum="100">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_weight="90"
+                app:srcCompat="@drawable/lays_cream_onion" />
+
+            <Button
+                android:id="@+id/buttmon5"
+                android:layout_width="125dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/add_rounded"
+                android:paddingBottom="5dp"
+                android:text="Add"
+                android:textColor="#F8F7F7"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+          </LinearLayout>
+
+          <LinearLayout
+              android:id="@+id/saud"
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_margin="10dp"
+              android:layout_weight="50"
+              android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textVhiew10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cream n Onion"
+                android:textColor="#31294C"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView1s2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Rs. 10"
+                android:textColor="#090909"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textVdsiiew13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp"
+                android:text="out of stock"
+                android:textColor="#E60B0B"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+              <ImageButton
+                  android:id="@+id/imageButton9"
+                  android:layout_width="0.005dp"
+                  android:layout_height="20dp"
+                  android:layout_weight="1"
+                  android:background="#F9F9F9"
+                  app:srcCompat="@drawable/minus" />
+
+              <TextView
+                  android:id="@+id/textView18"
+                  android:layout_width="0.002dp"
+                  android:layout_height="wrap_content"
+                  android:layout_marginBottom="3dp"
+                  android:layout_weight="1"
+                  android:text="0"
+                  android:textAlignment="center"
+                  android:textSize="20sp"
+                  android:textStyle="bold"
+                  android:translationY="-4dp" />
+
+              <ImageButton
+                  android:id="@+id/imageButton10"
+                  android:layout_width="0.002dp"
+                  android:layout_height="wrap_content"
+                  android:layout_marginEnd="90dp"
+                  android:layout_marginRight="90dp"
+                  android:layout_weight="1"
+                  android:background="#F9F9F9"
+                  app:srcCompat="@drawable/plus" />
+            </LinearLayout>
+
+          </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="20dp"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+          <LinearLayout
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="50"
+              android:orientation="vertical"
+              android:weightSum="100">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_weight="90"
+                app:srcCompat="@drawable/lays_indias_magic_masala" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="125dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/add_rounded"
+                android:paddingBottom="5dp"
+                android:text="Add"
+                android:textColor="#F8F7F7"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+          </LinearLayout>
+
+          <LinearLayout
+              android:id="@+id/sad"
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_margin="10dp"
+              android:layout_weight="50"
+              android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="India's Masala"
+                android:textColor="#31294C"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Rs. 10"
+                android:textColor="#090909"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp"
+                android:text="out of stock"
+                android:textColor="#E60B0B"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+              <ImageButton
+                  android:id="@+id/imageButton9"
+                  android:layout_width="0.005dp"
+                  android:layout_height="20dp"
+                  android:layout_weight="1"
+                  android:background="#F9F9F9"
+                  app:srcCompat="@drawable/minus" />
+
+              <TextView
+                  android:id="@+id/textView18"
+                  android:layout_width="0.002dp"
+                  android:layout_height="wrap_content"
+                  android:layout_marginBottom="3dp"
+                  android:layout_weight="1"
+                  android:text="0"
+                  android:textAlignment="center"
+                  android:textSize="20sp"
+                  android:textStyle="bold"
+                  android:translationY="-4dp" />
+
+              <ImageButton
+                  android:id="@+id/imageButton10"
+                  android:layout_width="0.002dp"
+                  android:layout_height="wrap_content"
+                  android:layout_marginEnd="90dp"
+                  android:layout_marginRight="90dp"
+                  android:layout_weight="1"
+                  android:background="#F9F9F9"
+                  app:srcCompat="@drawable/plus" />
+            </LinearLayout>
+
+          </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="20dp"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+          <LinearLayout
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="50"
+              android:orientation="vertical"
+              android:weightSum="100">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_weight="90"
+                app:srcCompat="@drawable/maggi" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="125dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/add_rounded"
+                android:paddingBottom="5dp"
+                android:text="Add"
+                android:textColor="#F8F7F7"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+          </LinearLayout>
+
+          <LinearLayout
+              android:id="@+id/sad"
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_margin="10dp"
+              android:layout_weight="50"
+              android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Maggi"
+                android:textColor="#31294C"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Rs. 10"
+                android:textColor="#090909"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp"
+                android:text="out of stock"
+                android:textColor="#E60B0B"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+              <ImageButton
+                  android:id="@+id/imageButton9"
+                  android:layout_width="0.005dp"
+                  android:layout_height="20dp"
+                  android:layout_weight="1"
+                  android:background="#F9F9F9"
+                  app:srcCompat="@drawable/minus" />
+
+              <TextView
+                  android:id="@+id/textView18"
+                  android:layout_width="0.002dp"
+                  android:layout_height="wrap_content"
+                  android:layout_marginBottom="3dp"
+                  android:layout_weight="1"
+                  android:text="0"
+                  android:textAlignment="center"
+                  android:textSize="20sp"
+                  android:textStyle="bold"
+                  android:translationY="-4dp" />
+
+              <ImageButton
+                  android:id="@+id/imageButton10"
+                  android:layout_width="0.002dp"
+                  android:layout_height="wrap_content"
+                  android:layout_marginEnd="90dp"
+                  android:layout_marginRight="90dp"
+                  android:layout_weight="1"
+                  android:background="#F9F9F9"
+                  app:srcCompat="@drawable/plus" />
+            </LinearLayout>
+
+          </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="20dp"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+          <LinearLayout
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="50"
+              android:orientation="vertical"
+              android:weightSum="100">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_weight="90"
+                app:srcCompat="@drawable/mtr_upma" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="125dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/add_rounded"
+                android:paddingBottom="5dp"
+                android:text="Add"
+                android:textColor="#F8F7F7"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+          </LinearLayout>
+
+          <LinearLayout
+              android:id="@+id/sad"
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_margin="10dp"
+              android:layout_weight="50"
+              android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MTR Upma"
+                android:textColor="#31294C"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Rs. 10"
+                android:textColor="#090909"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp"
+                android:text="out of stock"
+                android:textColor="#E60B0B"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+              <ImageButton
+                  android:id="@+id/imageButton9"
+                  android:layout_width="0.005dp"
+                  android:layout_height="20dp"
+                  android:layout_weight="1"
+                  android:background="#F9F9F9"
+                  app:srcCompat="@drawable/minus" />
+
+              <TextView
+                  android:id="@+id/textView18"
+                  android:layout_width="0.002dp"
+                  android:layout_height="wrap_content"
+                  android:layout_marginBottom="3dp"
+                  android:layout_weight="1"
+                  android:text="0"
+                  android:textAlignment="center"
+                  android:textSize="20sp"
+                  android:textStyle="bold"
+                  android:translationY="-4dp" />
+
+              <ImageButton
+                  android:id="@+id/imageButton10"
+                  android:layout_width="0.002dp"
+                  android:layout_height="wrap_content"
+                  android:layout_marginEnd="90dp"
+                  android:layout_marginRight="90dp"
+                  android:layout_weight="1"
+                  android:background="#F9F9F9"
+                  app:srcCompat="@drawable/plus" />
+            </LinearLayout>
+
+          </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="20dp"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+          <LinearLayout
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="50"
+              android:orientation="vertical"
+              android:weightSum="100">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_weight="90"
+                app:srcCompat="@drawable/sting" />
+
+            <Button
+                android:id="@+id/butgfton5"
+                android:layout_width="125dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/add_rounded"
+                android:paddingBottom="5dp"
+                android:text="Add"
+                android:textColor="#F8F7F7"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+          </LinearLayout>
+
+          <LinearLayout
+              android:id="@+id/slad"
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_margin="10dp"
+              android:layout_weight="50"
+              android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/texrtView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sting"
+                android:textColor="#31294C"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text5View12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Rs. 10"
+                android:textColor="#090909"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textVoiew13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp"
+                android:text="out of stock"
+                android:textColor="#E60B0B"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+              <ImageButton
+                  android:id="@+id/imdageButton9"
+                  android:layout_width="0.005dp"
+                  android:layout_height="20dp"
+                  android:layout_weight="1"
+                  android:background="#F9F9F9"
+                  app:srcCompat="@drawable/minus" />
+
+              <TextView
+                  android:id="@+id/texctView18"
+                  android:layout_width="0.002dp"
+                  android:layout_height="wrap_content"
+                  android:layout_marginBottom="3dp"
+                  android:layout_weight="1"
+                  android:text="0"
+                  android:textAlignment="center"
+                  android:textSize="20sp"
+                  android:textStyle="bold"
+                  android:translationY="-4dp" />
+
+              <ImageButton
+                  android:id="@+id/imagefButton10"
+                  android:layout_width="0.002dp"
+                  android:layout_height="wrap_content"
+                  android:layout_marginEnd="90dp"
+                  android:layout_marginRight="90dp"
+                  android:layout_weight="1"
+                  android:background="#F9F9F9"
+                  app:srcCompat="@drawable/plus" />
+            </LinearLayout>
+
+          </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="20dp"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+          <LinearLayout
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="50"
+              android:orientation="vertical"
+              android:weightSum="100">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_weight="90"
+                app:srcCompat="@drawable/kurkure" />
+
+            <Button
+                android:id="@+id/buetton5"
+                android:layout_width="125dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/add_rounded"
+                android:paddingBottom="5dp"
+                android:text="Add"
+                android:textColor="#F8F7F7"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+          </LinearLayout>
+
+          <LinearLayout
+              android:id="@+id/sfad"
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_margin="10dp"
+              android:layout_weight="50"
+              android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tfextView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Masala Munch"
+                android:textColor="#31294C"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tesxtView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Rs. 10"
+                android:textColor="#090909"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/wtextView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp"
+                android:text="out of stock"
+                android:textColor="#E60B0B"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+              <ImageButton
+                  android:id="@+id/imdageButton9"
+                  android:layout_width="0.005dp"
+                  android:layout_height="20dp"
+                  android:layout_weight="1"
+                  android:background="#F9F9F9"
+                  app:srcCompat="@drawable/minus" />
+
+              <TextView
+                  android:id="@+id/teextView18"
+                  android:layout_width="0.002dp"
+                  android:layout_height="wrap_content"
+                  android:layout_marginBottom="3dp"
+                  android:layout_weight="1"
+                  android:text="0"
+                  android:textAlignment="center"
+                  android:textSize="20sp"
+                  android:textStyle="bold"
+                  android:translationY="-4dp" />
+
+              <ImageButton
+                  android:id="@+id/imageeButton10"
+                  android:layout_width="0.002dp"
+                  android:layout_height="wrap_content"
+                  android:layout_marginEnd="90dp"
+                  android:layout_marginRight="90dp"
+                  android:layout_weight="1"
+                  android:background="#F9F9F9"
+                  app:srcCompat="@drawable/plus" />
+            </LinearLayout>
+
+          </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="20dp"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+          <LinearLayout
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="50"
+              android:orientation="vertical"
+              android:weightSum="100">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_weight="90"
+                app:srcCompat="@drawable/kurkure" />
+
+            <Button
+                android:id="@+id/button35"
+                android:layout_width="125dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/add_rounded"
+                android:paddingBottom="5dp"
+                android:text="Add"
+                android:textColor="#F8F7F7"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+          </LinearLayout>
+
+          <LinearLayout
+              android:id="@+id/saad"
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_margin="10dp"
+              android:layout_weight="50"
+              android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/te2xtView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Masala Munch"
+                android:textColor="#31294C"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/f"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Rs. 10"
+                android:textColor="#090909"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textVie3w13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp"
+                android:text="out of stock"
+                android:textColor="#E60B0B"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+              <ImageButton
+                  android:id="@+id/imageButto3n9"
+                  android:layout_width="0.005dp"
+                  android:layout_height="20dp"
+                  android:layout_weight="1"
+                  android:background="#F9F9F9"
+                  app:srcCompat="@drawable/minus" />
+
+              <TextView
+                  android:id="@+id/textView128"
+                  android:layout_width="0.002dp"
+                  android:layout_height="wrap_content"
+                  android:layout_marginBottom="3dp"
+                  android:layout_weight="1"
+                  android:text="0"
+                  android:textAlignment="center"
+                  android:textSize="20sp"
+                  android:textStyle="bold"
+                  android:translationY="-4dp" />
+
+              <ImageButton
+                  android:id="@+id/imageButton160"
+                  android:layout_width="0.002dp"
+                  android:layout_height="wrap_content"
+                  android:layout_marginEnd="90dp"
+                  android:layout_marginRight="90dp"
+                  android:layout_weight="1"
+                  android:background="#F9F9F9"
+                  app:srcCompat="@drawable/plus" />
+            </LinearLayout>
+
+          </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="20dp"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+          <LinearLayout
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="50"
+              android:orientation="vertical"
+              android:weightSum="100">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_weight="90"
+                app:srcCompat="@drawable/kurkure" />
+
+            <Button
+                android:id="@+id/button56"
+                android:layout_width="125dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/add_rounded"
+                android:paddingBottom="5dp"
+                android:text="Add"
+                android:textColor="#F8F7F7"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+          </LinearLayout>
+
+          <LinearLayout
+              android:id="@+id/sadg"
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_margin="10dp"
+              android:layout_weight="50"
+              android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView105"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Masala Munch"
+                android:textColor="#31294C"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView123"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Rs. 10"
+                android:textColor="#090909"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp"
+                android:text="out of stock"
+                android:textColor="#E60B0B"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+              <ImageButton
+                  android:id="@+id/imageButton19"
+                  android:layout_width="0.005dp"
+                  android:layout_height="20dp"
+                  android:layout_weight="1"
+                  android:background="#F9F9F9"
+                  app:srcCompat="@drawable/minus" />
+
+              <TextView
+                  android:id="@+id/textView19"
+                  android:layout_width="0.002dp"
+                  android:layout_height="wrap_content"
+                  android:layout_marginBottom="3dp"
+                  android:layout_weight="1"
+                  android:text="0"
+                  android:textAlignment="center"
+                  android:textSize="20sp"
+                  android:textStyle="bold"
+                  android:translationY="-4dp" />
+
+              <ImageButton
+                  android:id="@+id/imageButton11"
+                  android:layout_width="0.002dp"
+                  android:layout_height="wrap_content"
+                  android:layout_marginEnd="90dp"
+                  android:layout_marginRight="90dp"
+                  android:layout_weight="1"
+                  android:background="#F9F9F9"
+                  app:srcCompat="@drawable/plus" />
+            </LinearLayout>
+
+          </LinearLayout>
+
+        </LinearLayout>
+
+      </LinearLayout>
+    </ScrollView>
+
+
+  </LinearLayout>
+</android.support.constraint.ConstraintLayout>
