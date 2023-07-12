@@ -1,7 +1,7 @@
 # Hostel-Midnight-snacking
 # Skillset Shown
 1. JAVA
-2. Google Firebase
+2. Google Firebase (Authentication & Firestore Database)
 3. XML
 # Project Objective
 Does anyone have maggi? I'll pay.
