@@ -1,4 +1,8 @@
 # Hostel-Midnight-snacking
+# Skillset Shown
+1. JAVA
+2. Google Firebase
+3. XML
 # Project Objective
 Does anyone have maggi? I'll pay.
 Does anyone have a packet of lays or kurkure? Anything works.
