@@ -4,6 +4,7 @@ Does anyone have maggi? I'll pay.
 Does anyone have a packet of lays or kurkure? Anything works.
 Does anyone have any kind of soft drink to satisfy my cravings? Will pay for sure.
 These are the messages that we, the hostelers, use to get in our whatsApp group. Therefore to solve the problems of hostelers and to satisfy their cravings we are here with our app "THE HOSTEL MIDNIGHT SNACKING" which is a kind of shopping app that can only be accessible by KG hostelers. This app will provide an ease in ordering snacks, wafers, cold drinks, maggi etc anytime before 1:00 am and will be delivered to their rooms.
+
 [FinalAppPreview.pdf](https://github.com/SadgiTiwari/Hostel-Midnight-snacking/files/12025703/FinalAppPreview.pdf)
 ![Screenshot_20230712_141147](https://github.com/SadgiTiwari/Hostel-Midnight-snacking/assets/125756813/b999e21a-5fda-4d7a-b12d-829082fb58d3)
 ![Screenshot_20230712_141152](https://github.com/SadgiTiwari/Hostel-Midnight-snacking/assets/125756813/ba629d1e-6003-436d-b037-2aa15690154f)
