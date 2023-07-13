@@ -15,6 +15,6 @@ These are the messages that we, the hostelers, used to get in our whatsApp group
 ![IMG_20230712_141544](https://github.com/SadgiTiwari/Hostel-Midnight-snacking/assets/125756813/ef4c9ca1-0aaa-4429-a170-84884a86f1d6)
 ![Screenshot_20230712_141147](https://github.com/SadgiTiwari/Hostel-Midnight-snacking/assets/125756813/b999e21a-5fda-4d7a-b12d-829082fb58d3)
 ![Screenshot_20230712_141152](https://github.com/SadgiTiwari/Hostel-Midnight-snacking/assets/125756813/ba629d1e-6003-436d-b037-2aa15690154f)
-![Screenshot_20230712_141156](https://github.com/SadgiTiwari/Hostel-Midnight-snacking/assets/125756813/fa76dd57-d3cf-46fc-b3f3-9e1c3c5e5af3)
+![IMG_20230713_190717](https://github.com/SadgiTiwari/Hostel-Midnight-snacking/assets/125756813/b372300a-d2c8-42c8-ade9-188332f2a99e)
 ![Screenshot_20230712_141240](https://github.com/SadgiTiwari/Hostel-Midnight-snacking/assets/125756813/3295cc83-8b1a-4062-ab50-a5a619cd2f0b)
 ![Screenshot_20230712_141741](https://github.com/SadgiTiwari/Hostel-Midnight-snacking/assets/125756813/1ae1ce65-885f-4707-b0de-69337032dde4)
