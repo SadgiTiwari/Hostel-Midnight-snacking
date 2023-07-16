@@ -3,6 +3,7 @@
 1. JAVA
 2. Google Firebase (Authentication & Firestore Database)
 3. XML
+# Developed in 1 week.
 # Project Objective
 Does anyone have maggi? I'll pay.
 Does anyone have a packet of lays or kurkure? Anything works.
